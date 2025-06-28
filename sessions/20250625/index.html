@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>한국어-영어 학습 튜토리얼 - 스포츠 관람 경험</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Dark/Light Mode Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+        <span class="sun-icon">☀️</span>
+        <span class="moon-icon">🌙</span>
+    </button>
+
+    <div class="container">
+        <header>
+            <h1>스포츠 관람 경험</h1>
+            <div class="fancy-underline"></div>
+        </header>
+
+        <main>
+            <div class="tabs card">
+                <input type="radio" id="tab1" name="tabs" class="tab-input" checked>
+                <input type="radio" id="tab2" name="tabs" class="tab-input">
+                <input type="radio" id="tab3" name="tabs" class="tab-input">
+                <input type="radio" id="tab4" name="tabs" class="tab-input">
+                <input type="radio" id="tab5" name="tabs" class="tab-input">
+                
+                <div class="tab-labels">
+                    <label for="tab1" class="tab-label">첫 인상</label>
+                    <label for="tab2" class="tab-label">문장 연결</label>
+                    <label for="tab3" class="tab-label">동기 부여</label>
+                    <label for="tab4" class="tab-label">현실 인정</label>
+                    <label for="tab5" class="tab-label">경험 평가</label>
+                </div>
+                
+                <!-- Tab 1: 첫 인상 -->
+                <div class="tab-content tab-content-1" id="content1">
+                    <div class="language-comparison">
+                        <div class="language-card korean">
+                            <span class="language-label">원문</span>
+                            <div class="sentence">
+                                While I was watching the game, I thought all the athletes were not human. They were good at. I thought they were monsters.
+                            </div>
+                        </div>
+                            
+                        <div class="arrow-container">
+                            <div class="arrow">→</div>
+                        </div>
+                            
+                        <div class="language-card english">
+                            <span class="language-label">수정</span>
+                            <div class="sentence">
+                                While I was watching the game, I felt like all the athletes were not even human. They were like monsters.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-text">While I was watching the game, I thought all the athletes were not human. They were good at. I thought they were monsters.</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">While I was watching the game, I thought all the athletes were not human. I thought they were monsters.</div>
+                        </div>
+                        <div class="step-note">문장을 합쳐서 더 자연스럽게 만들어요!</div>
+                        
+                        <div class="process-step">
+                            <div class="step-text">I thought all the athletes were not human.</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">I felt like all the athletes were not human.</div>
+                        </div>
+                        <div class="step-note">'느끼다'를 표현할 때는 'feel like'를 사용해요!</div>
+                        
+                        <div class="process-step">
+                            <div class="step-text">I felt like all the athletes were not human.</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">I felt like all the athletes were not even human.</div>
+                        </div>
+                        <div class="step-note">'even'을 추가해서 강조의 효과를 줍니다!</div>
+                        
+                        <div class="process-step">
+                            <div class="step-text">I thought they were monsters.</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">They were like monsters.</div>
+                        </div>
+                        <div class="step-note">'like'를 사용해서 비유 표현을 만들어요!</div>
+                    </div>
+
+                    <div class="explanation-section">
+                        <h2 class="section-title">핵심 포인트</h2>
+                        <div class="explanation-content">
+                            <h3 class="explanation-title">1. 감정 표현: "<span class="highlight">feel like</span>"</h3>
+                            <p>
+                                '이렇게 느끼다'를 표현할 때는 'feel like'를 사용합니다:
+                            </p>
+                            <div class="phrase-list">
+                                <div class="phrase-item">
+                                    <span class="key-phrase">I feel like → ~한 느낌이다</span>
+                                </div>
+                                <div class="phrase-item">
+                                    <span class="key-phrase">I felt like → ~한 느낌이었다</span>
+                                </div>
+                            </div>
+
+                            <h3 class="explanation-title">2. 강조 표현: "<span class="highlight">even</span>"</h3>
+                            <p>
+                                'even'을 사용해서 강조의 효과를 줄 수 있습니다:
+                            </p>
+                            <div class="phrase-list">
+                                <div class="phrase-item">
+                                    <span class="key-phrase">not even human → 정말 사람도 아닌</span>
+                                </div>
+                            </div>
+
+                            <div class="example">
+                                <div class="example-label">예문:</div>
+                                <div class="example-item">
+                                    I <span class="key-phrase">felt like</span> all the athletes were <span class="key-phrase">not even human</span>.
+                                    <br><span class="alternative">(나는 모든 선수들이 정말 사람도 아닌 것 같았다.)</span>
+                                </div>
+                                <div class="example-item">
+                                    They were <span class="key-phrase">like monsters</span>.
+                                    <br><span class="alternative">(그들은 괴물 같았다.)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 2: 문장 연결 -->
+                <div class="tab-content tab-content-2" id="content2">
+                    <div class="explanation-section">
+                        <h2 class="section-title">자연스러운 문장 연결</h2>
+                        <div class="explanation-content">
+                            <h3 class="explanation-title">1. 문장 합치기</h3>
+                            <p>
+                                반복되는 내용을 하나로 합쳐서 더 자연스럽게 만들어보세요:
+                            </p>
+                            <div class="language-comparison" style="margin-top: 20px;">
+                                <div class="language-card korean">
+                                    <span class="language-label">분리된 문장</span>
+                                    <div class="sentence">
+                                        I thought all the athletes were not human. I thought they were monsters.
+                                    </div>
+                                </div>
+                                    
+                                <div class="arrow-container">
+                                    <div class="arrow">→</div>
+                                </div>
+                                    
+                                <div class="language-card english">
+                                    <span class="language-label">연결된 문장</span>
+                                    <div class="sentence">
+                                        I felt like all the athletes were not even human. They were like monsters.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3 class="explanation-title">2. 'feel like' vs 'think'</h3>
+                            <p>
+                                감정적인 인상을 표현할 때는 'feel like'가 더 적합합니다:
+                            </p>
+                            <div class="phrase-list">
+                                <div class="phrase-item">
+                                    <span class="key-phrase">I think → 생각하다 (논리적)</span>
+                                </div>
+                                <div class="phrase-item">
+                                    <span class="key-phrase">I feel like → 느끼다 (감정적)</span>
+                                </div>
+                            </div>
+
+                            <div class="example">
+                                <div class="example-label">비교 예문:</div>
+                                <div class="example-item">
+                                    I <span class="key-phrase">think</span> he is a good player.
+                                    <br><span class="alternative">(그는 좋은 선수라고 생각한다.)</span>
+                                </div>
+                                <div class="example-item">
+                                    I <span class="key-phrase">feel like</span> he is a superhero.
+                                    <br><span class="alternative">(그는 슈퍼히어로 같은 느낌이다.)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 3: 동기 부여 -->
+                <div class="tab-content tab-content-3" id="content3">
+                    <div class="language-comparison">
+                        <div class="language-card korean">
+                            <span class="language-label">원문</span>
+                            <div class="sentence">
+                                After watched it, I motivated to play harder for CrossFit.
+                            </div>
+                        </div>
+                        
+                        <div class="arrow-container">
+                            <div class="arrow">→</div>
+                        </div>
+                        
+                        <div class="language-card english">
+                            <span class="language-label">수정</span>
+                            <div class="sentence">
+                                After watching it, I was motivated to train harder for CrossFit.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-text">After watched it</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">After watching it</div>
+                        </div>
+                        <div class="step-note">'after' 뒤에는 동사 + ing 형태를 사용해요!</div>
+                        
+                        <div class="process-step">
+                            <div class="step-text">I motivated to play harder</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">I was motivated to train harder</div>
+                        </div>
+                        <div class="step-note">'자극을 받다'는 'be motivated'로 표현하고, 'train'이 더 적절해요!</div>
+                    </div>
+
+                    <div class="explanation-section">
+                        <h2 class="section-title">핵심 포인트</h2>
+                        <div class="explanation-content">
+                            <h3 class="explanation-title">1. 전치사 + 동사ing: "<span class="highlight">after watching</span>"</h3>
+                            <p>
+                                'after' 뒤에는 동사의 -ing 형태를 사용합니다:
+                            </p>
+                            <div class="phrase-list">
+                                <div class="phrase-item">
+                                    <span class="key-phrase">after + 동사ing</span>
+                                </div>
+                                <div class="phrase-item">
+                                    <span class="key-phrase">before + 동사ing</span>
+                                </div>
+                            </div>
+
+                            <h3 class="explanation-title">2. 수동태: "<span class="highlight">be motivated</span>"</h3>
+                            <p>
+                                '자극을 받다'는 수동태로 표현합니다:
+                            </p>
+                            <div class="phrase-list">
+                                <div class="phrase-item">
+                                    <span class="key-phrase">be motivated → 동기부여를 받다</span>
+                                </div>
+                                <div class="phrase-item">
+                                    <span class="key-phrase">be inspired → 영감을 받다</span>
+                                </div>
+                            </div>
+
+                            <h3 class="explanation-title">3. 운동 관련 단어: "<span class="highlight">train vs practice</span>"</h3>
+                            <p>
+                                CrossFit처럼 체력 훈련의 경우 'train'이 더 적절합니다:
+                            </p>
+                            <div class="phrase-list">
+                                <div class="phrase-item">
+                                    <span class="key-phrase">train → 훈련하다 (체력, 근력)</span>
+                                </div>
+                                <div class="phrase-item">
+                                    <span class="key-phrase">practice → 연습하다 (기술, 스킬)</span>
+                                </div>
+                            </div>
+
+                            <div class="example">
+                                <div class="example-label">예문:</div>
+                                <div class="example-item">
+                                    <span class="key-phrase">After watching</span> the game, I was <span class="key-phrase">motivated</span> to <span class="key-phrase">train</span> harder.
+                                    <br><span class="alternative">(경기를 본 후, 더 열심히 훈련하고 싶은 동기를 얻었다.)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 4: 현실 인정 -->
+                <div class="tab-content tab-content-4" id="content4">
+                    <div class="language-comparison">
+                        <div class="language-card korean">
+                            <span class="language-label">원문</span>
+                            <div class="sentence">
+                                But, even if I practice hard I can't be like them. Because they are monsters.
+                            </div>
+                        </div>
+                        
+                        <div class="arrow-container">
+                            <div class="arrow">→</div>
+                        </div>
+                        
+                        <div class="language-card english">
+                            <span class="language-label">수정</span>
+                            <div class="sentence">
+                                However, no matter how hard I practice, I can never be like them. Because they are monsters.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="explanation-section">
+                        <h2 class="section-title">강한 대조와 절대성 표현</h2>
+                        <div class="explanation-content">
+                            <h3 class="explanation-title">1. 대조 표현: "<span class="highlight">However</span>"</h3>
+                            <p>
+                                공식적인 글에서는 'But' 대신 'However'를 사용하는 것이 좋습니다:
+                            </p>
+                            <div class="phrase-list">
+                                <div class="phrase-item">
+                                    <span class="key-phrase">But → 하지만 (비공식적)</span>
+                                </div>
+                                <div class="phrase-item">
+                                    <span class="key-phrase">However → 그러나 (공식적)</span>
+                                </div>
+                            </div>
+
+                            <h3 class="explanation-title">2. 절대성 표현: "<span class="highlight">No matter how</span>"</h3>
+                            <p>
+                                '아무리 ~해도'를 강하게 표현할 때 사용합니다:
+                            </p>
+                            <div class="phrase-list">
+                                <div class="phrase-item">
+                                    <span class="key-phrase">No matter how + 형용사/부사</span>
+                                </div>
+                                <div class="phrase-item">
+                                    <span class="key-phrase">Even if + 문장</span>
+                                </div>
+                            </div>
+
+                            <div class="example">
+                                <div class="example-label">'No matter how' 예문:</div>
+                                <div class="example-item">
+                                    <span class="key-phrase">No matter how hard</span> I try, I can't win.
+                                    <br><span class="alternative">(아무리 열심히 해도 이길 수 없다.)</span>
+                                </div>
+                                <div class="example-item">
+                                    <span class="key-phrase">No matter how tired</span> I am, I always play CrossFit.
+                                    <br><span class="alternative">(아무리 피곤해도 항상 크로스핏을 한다.)</span>
+                                </div>
+                                <div class="example-item">
+                                    <span class="key-phrase">No matter how expensive</span> it is, I can buy it.
+                                    <br><span class="alternative">(아무리 비싸도 살 수 있다.)</span>
+                                </div>
+                            </div>
+
+                            <div class="example">
+                                <div class="example-label">'Even if' 예문:</div>
+                                <div class="example-item">
+                                    <span class="key-phrase">Even if</span> I try my best, I can't beat him.
+                                    <br><span class="alternative">(최선을 다해도 그를 이길 수 없다.)</span>
+                                </div>
+                                <div class="example-item">
+                                    <span class="key-phrase">Even if</span> I study hard, my score is low.
+                                    <br><span class="alternative">(열심히 공부해도 점수가 낮다.)</span>
+                                </div>
+                                <div class="example-item">
+                                    <span class="key-phrase">Even if</span> I am tired, I must play CrossFit.
+                                    <br><span class="alternative">(피곤해도 크로스핏을 해야 한다.)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <!-- Tab 5: 경험 평가 -->
+                <div class="tab-content tab-content-5" id="content5">
+                    <div class="language-comparison">
+                        <div class="language-card korean">
+                            <span class="language-label">원문</span>
+                            <div class="sentence">
+                                By the way, it is good experience for me.
+                            </div>
+                        </div>
+                        
+                        <div class="arrow-container">
+                            <div class="arrow">→</div>
+                        </div>
+                        
+                        <div class="language-card english">
+                            <span class="language-label">수정</span>
+                            <div class="sentence">
+                                By the way, it was a good experience for me.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-text">it is good experience for me</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">it was a good experience for me</div>
+                        </div>
+                        <div class="step-note">과거 경험이므로 과거형을 사용하고, 관사 'a'를 추가해요!</div>
+                    </div>
+
+                    <div class="explanation-section">
+                        <h2 class="section-title">시제와 관사 사용법</h2>
+                        <div class="explanation-content">
+                            <h3 class="explanation-title">1. 시제 일치: "<span class="highlight">과거형 사용</span>"</h3>
+                            <p>
+                                이미 끝난 경험에 대해 이야기할 때는 과거형을 사용해야 합니다:
+                            </p>
+                            <div class="phrase-list">
+                                <div class="phrase-item">
+                                    <span class="key-phrase">it is → 현재형 (일반적 사실)</span>
+                                </div>
+                                <div class="phrase-item">
+                                    <span class="key-phrase">it was → 과거형 (과거 경험)</span>
+                                </div>
+                            </div>
+
+                            <h3 class="explanation-title">2. 관사 사용: "<span class="highlight">a good experience</span>"</h3>
+                            <p>
+                                셀 수 있는 명사 앞에는 관사를 사용해야 합니다:
+                            </p>
+                            <div class="phrase-list">
+                                <div class="phrase-item">
+                                    <span class="key-phrase">a good experience → 좋은 경험 (하나의)</span>
+                                </div>
+                                <div class="phrase-item">
+                                    <span class="key-phrase">good experiences → 좋은 경험들 (여러 개)</span>
+                                </div>
+                            </div>
+
+                            <div class="example">
+                                <div class="example-label">시제와 관사 예문:</div>
+                                <div class="example-item">
+                                    It <span class="key-phrase">was a good experience</span> for me.
+                                    <br><span class="alternative">(그것은 나에게 좋은 경험이었다.)</span>
+                                </div>
+                                <div class="example-item">
+                                    Watching the Olympics <span class="key-phrase">was an amazing experience</span>.
+                                    <br><span class="alternative">(올림픽을 보는 것은 놀라운 경험이었다.)</span>
+                                </div>
+                                <div class="example-item">
+                                    Meeting the athletes <span class="key-phrase">was a memorable experience</span>.
+                                    <br><span class="alternative">(선수들을 만나는 것은 기억에 남는 경험이었다.)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <a href="" class="home-button">홈으로가기</a>
+        </footer>
+    </div>
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+
+        // Check for saved theme preference or default to 'light'
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        body.setAttribute('data-theme', currentTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+    </script>
+</body>
+</html>
