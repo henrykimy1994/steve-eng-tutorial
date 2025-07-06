@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>20250620 - 4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Dark/Light Mode Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+        <span class="sun-icon">☀️</span>
+        <span class="moon-icon">🌙</span>
+    </button>
+
+    <div class="container">
+        <header>
+            <h1>20250701 - 3</h1>
+            <div class="fancy-underline"></div>
+        </header>
+
+        <main>
+            <div class="tabs card">
+                <input type="radio" id="tab1" name="tabs" class="tab-input" checked>
+                <input type="radio" id="tab2" name="tabs" class="tab-input">
+                <input type="radio" id="tab3" name="tabs" class="tab-input">
+                <input type="radio" id="tab4" name="tabs" class="tab-input">
+                <input type="radio" id="tab5" name="tabs" class="tab-input">
+                
+                <div class="tab-labels">
+                    <label for="tab1" class="tab-label">Since 시제</label>
+                    <label for="tab2" class="tab-label">Ever since</label>
+                    <label for="tab3" class="tab-label">현재 상황</label>
+                    <label for="tab4" class="tab-label">원인 설명</label>
+                    <label for="tab5" class="tab-label">결과 표현</label>
+                </div>
+                
+                <!-- Tab 1: Since 시제 -->
+                <div class="tab-content tab-content-1" id="content1">
+                    <div class="language-comparison">
+                        <div class="language-card korean">
+                            <span class="language-label">원문</span>
+                            <div class="sentence">
+                                And since I played CrossFit I became a healthy and diligent person.
+                            </div>
+                        </div>
+                            
+                        <div class="arrow-container">
+                            <div class="arrow">→</div>
+                        </div>
+                            
+                        <div class="language-card english">
+                            <span class="language-label">수정</span>
+                            <div class="sentence">
+                                Since I started doing CrossFit, I've become a healthier and more diligent person.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-text">And since I played CrossFit I became a healthy and diligent person.</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">Since I played CrossFit I became a healthy and diligent person.</div>
+                        </div>
+                        <div class="step-note">'And' 제거하여 문장 시작을 깔끔하게!</div>
+                        
+                        <div class="process-step">
+                            <div class="step-text">Since I played CrossFit I became a healthy and diligent person.</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">Since I played CrossFit I have became a healthy and diligent person.</div>
+                        </div>
+                        <div class="step-note">'have' 추가로 현재완료 시제 만들기!</div>
+                        
+                        <div class="process-step">
+                            <div class="step-text">Since I played CrossFit I have became a healthy and diligent person.</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">Since I started doing CrossFit, I have became a healthy and diligent person.</div>
+                        </div>
+                        <div class="step-note">'started doing' 사용이 더 자연스러워요!</div>
+                        
+                        <div class="process-step">
+                            <div class="step-text">Since I started doing CrossFit, I have became a healthy and diligent person.</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">Since I started doing CrossFit, I have become a healthy and diligent person.</div>
+                        </div>
+                        <div class="step-note">'become'이 올바른 과거분사형이에요!</div>
+                        
+                        <div class="process-step">
+                            <div class="step-text">Since I started doing CrossFit, I have become a healthy and diligent person.</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">Since I started doing CrossFit, I have become a healthier and more diligent person.</div>
+                        </div>
+                        <div class="step-note">비교급 'healthier'와 'more diligent' 사용!</div>
+                        
+                        <div class="process-step">
+                            <div class="step-text">Since I started doing CrossFit, I have become a healthier and more diligent person.</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">Since I started doing CrossFit, I've become a healthier and more diligent person.</div>
+                        </div>
+                        <div class="step-note">축약형 'I've' 사용으로 더 자연스럽게!</div>
+                    </div>
+
+                    <div class="explanation-section">
+                        <h2 class="section-title">핵심 포인트</h2>
+                        <div class="explanation-content">
+                            <h3 class="explanation-title">1. Since 시제: "<span class="highlight">과거 + 현재완료</span>"</h3>
+                            <p>
+                                'Since'로 시작하는 문장에서는 과거와 현재완료 시제를 함께 사용합니다:
+                            </p>
+                            <div class="phrase-list">
+                                <div class="phrase-item">
+                                    <span class="key-phrase">Since + 과거시제, 현재완료</span>
+                                </div>
+                                <div class="phrase-item">
+                                    <span class="key-phrase">Since I started → I have become</span>
+                                </div>
+                            </div>
+
+                            <h3 class="explanation-title">2. Do vs Play 사용법</h3>
+                            <p>
+                                운동과 게임에 따라 다른 동사를 사용합니다:
+                            </p>
+                            <div class="phrase-list">
+                                <div class="phrase-item">
+                                    <span class="key-phrase">do CrossFit → 운동은 'do'</span>
+                                </div>
+                                <div class="phrase-item">
+                                    <span class="key-phrase">play a game → 게임은 'play'</span>
+                                </div>
+                            </div>
+
+                            <div class="example">
+                                <div class="example-label">Since 구문 예문:</div>
+                                <div class="example-item">
+                                    <span class="key-phrase">Since I started doing CrossFit</span>, I've become a healthier and more diligent person.
+                                    <br><span class="alternative">(크로스핏을 시작한 이후로 더 건강하고 부지런한 사람이 되었다.)</span>
+                                </div>
+                                <div class="example-item">
+                                    <span class="key-phrase">Since I moved to Seoul</span>, I've learned so much Korean.
+                                    <br><span class="alternative">(서울로 이사온 이후로 한국어를 많이 배웠다.)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Ever since -->
+                <div class="tab-content tab-content-2" id="content2">
+                    <div class="language-comparison">
+                        <div class="language-card korean">
+                            <span class="language-label">한국어</span>
+                            <div class="sentence">
+                                크로스핏을 한 이후로 더욱 건강하고 부지런한 사람이 됐다.
+                            </div>
+                        </div>
+                        
+                        <div class="arrow-container">
+                            <div class="arrow">→</div>
+                        </div>
+                        
+                        <div class="language-card english">
+                            <span class="language-label">영어</span>
+                            <div class="sentence">
+                                Ever since I started doing CrossFit, I've become a healthier and more diligent person.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="explanation-section">
+                        <h2 class="section-title">Ever Since 완전 정복</h2>
+                        <div class="explanation-content">
+                            <h3 class="explanation-title">1. Ever since 의미와 사용법</h3>
+                            <p>
+                                'Ever since'는 '~한 이후로 계속'이라는 의미로 강조를 위해 사용됩니다:
+                            </p>
+                            <div class="phrase-list">
+                                <div class="phrase-item">
+                                    <span class="key-phrase">Ever since → ~한 이후로 계속</span>
+                                </div>
+                                <div class="phrase-item">
+                                    <span class="key-phrase">Since보다 더 강한 표현</span>
+                                </div>
+                            </div>
+
+                            <div class="example">
+                                <div class="example-label">Ever since 예문:</div>
+                                <div class="example-item">
+                                    <span class="key-phrase">Ever since I started doing CrossFit</span>, I've become a healthier and more diligent person.
+                                    <br><span class="alternative">(크로스핏을 시작한 이후로 더욱 건강하고 부지런한 사람이 되었다.)</span>
+                                </div>
+                                <div class="example-item">
+                                    <span class="key-phrase">Ever since we started working out</span>, we've felt more energetic.
+                                    <br><span class="alternative">(운동을 시작한 이후로, 우리는 더 활력이 생겼다.)</span>
+                                </div>
+                                <div class="example-item">
+                                    <span class="key-phrase">Ever since I moved here</span>, I've been happy.
+                                    <br><span class="alternative">(여기로 이사온 이후로 계속 행복하다.)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 3: 현재 상황 -->
+                <div class="tab-content tab-content-3" id="content3">
+                    <div class="language-comparison">
+                        <div class="language-card korean">
+                            <span class="language-label">완벽한 문장</span>
+                            <div class="sentence">
+                                These days, I'm busy.
+                            </div>
+                        </div>
+                        
+                        <div class="arrow-container">
+                            <div class="arrow">✓</div>
+                        </div>
+                        
+                        <div class="language-card english">
+                            <span class="language-label">설명</span>
+                            <div class="sentence">
+                                문법적으로 완벽한 표현입니다!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="explanation-section">
+                        <h2 class="section-title">현재 상황 표현하기</h2>
+                        <div class="explanation-content">
+                            <h3 class="explanation-title">1. These days 활용법</h3>
+                            <p>
+                                현재의 상황이나 최근의 변화를 표현할 때 사용합니다:
+                            </p>
+                            <div class="phrase-list">
+                                <div class="phrase-item">
+                                    <span class="key-phrase">These days → 요즘에는</span>
+                                </div>
+                                <div class="phrase-item">
+                                    <span class="key-phrase">Nowadays → 요즘에는</span>
+                                </div>
+                                <div class="phrase-item">
+                                    <span class="key-phrase">Recently → 최근에</span>
+                                </div>
+                            </div>
+
+                            <div class="example">
+                                <div class="example-label">현재 상황 예문:</div>
+                                <div class="example-item">
+                                    <span class="key-phrase">These days</span>, I'm busy.
+                                    <br><span class="alternative">(요즘에는 바쁘다.)</span>
+                                </div>
+                                <div class="example-item">
+                                    <span class="key-phrase">Nowadays</span>, people use smartphones a lot.
+                                    <br><span class="alternative">(요즘 사람들은 스마트폰을 많이 사용한다.)</span>
+                                </div>
+                                <div class="example-item">
+                                    <span class="key-phrase">Recently</span>, I've been learning Korean.
+                                    <br><span class="alternative">(최근에 한국어를 배우고 있다.)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 4: 원인 설명 -->
+                <div class="tab-content tab-content-4" id="content4">
+                    <div class="language-comparison">
+                        <div class="language-card korean">
+                            <span class="language-label">원문</span>
+                            <div class="sentence">
+                                Because most people travel in the summer. So, when they travel they break their phones or drop them in water.
+                            </div>
+                        </div>
+                        
+                        <div class="arrow-container">
+                            <div class="arrow">→</div>
+                        </div>
+                        
+                        <div class="language-card english">
+                            <span class="language-label">수정</span>
+                            <div class="sentence">
+                                A lot of people travel during the summer, and that's when they tend to break their phones or drop them in water.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-text">Because most people travel in the summer.</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">Because a lot of people travel in the summer,</div>
+                        </div>
+                        <div class="step-note">'a lot of' 사용이 더 자연스러워요!</div>
+                        
+                        <div class="process-step">
+                            <div class="step-text">Because a lot of people travel in the summer,</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">Because a lot of people travel during the summer,</div>
+                        </div>
+                        <div class="step-note">'during' 사용으로 더 정확한 표현!</div>
+                        
+                        <div class="process-step">
+                            <div class="step-text">when they travel they break their phones</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">they tend to break their phones</div>
+                        </div>
+                        <div class="step-note">'tend to' 사용으로 경향성 표현!</div>
+                        
+                        <div class="process-step">
+                            <div class="step-text">Because a lot of people travel during the summer, they tend to break their phones</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">A lot of people travel during the summer, and that's when they tend to break their phones</div>
+                        </div>
+                        <div class="step-note">'and that's when' 표현으로 더 자연스럽게!</div>
+                    </div>
+
+                    <div class="explanation-section">
+                        <h2 class="section-title">원인과 결과 연결하기</h2>
+                        <div class="explanation-content">
+                            <h3 class="explanation-title">1. And that's when 표현법</h3>
+                            <p>
+                                상황과 그 결과를 자연스럽게 연결하는 표현입니다:
+                            </p>
+                            <div class="phrase-list">
+                                <div class="phrase-item">
+                                    <span class="key-phrase">and that's when → 그때가 바로</span>
+                                </div>
+                                <div class="phrase-item">
+                                    <span class="key-phrase">tend to → ~하는 경향이 있다</span>
+                                </div>
+                            </div>
+
+                            <h3 class="explanation-title">2. During vs In 차이점</h3>
+                            <p>
+                                시간 표현에서의 전치사 사용법:
+                            </p>
+                            <div class="phrase-list">
+                                <div class="phrase-item">
+                                    <span class="key-phrase">during the summer → 여름 기간 동안</span>
+                                </div>
+                                <div class="phrase-item">
+                                    <span class="key-phrase">in the summer → 여름에</span>
+                                </div>
+                            </div>
+
+                            <div class="example">
+                                <div class="example-label">원인-결과 연결 예문:</div>
+                                <div class="example-item">
+                                    A lot of people travel during the summer, <span class="key-phrase">and that's when</span> they tend to break their phones.
+                                    <br><span class="alternative">(많은 사람들이 여름에 여행을 가는데, 그때가 바로 핸드폰을 망가뜨리는 때이다.)</span>
+                                </div>
+                                <div class="example-item">
+                                    Students study hard for exams, <span class="key-phrase">and that's when</span> they tend to get stressed.
+                                    <br><span class="alternative">(학생들은 시험을 위해 열심히 공부하는데, 그때가 바로 스트레스를 받는 때이다.)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <!-- Tab 5: 결과 표현 -->
+                <div class="tab-content tab-content-5" id="content5">
+                    <div class="language-comparison">
+                        <div class="language-card korean">
+                            <span class="language-label">원문</span>
+                            <div class="sentence">
+                                So, summer is my peak season for repairing phones and devices.
+                            </div>
+                        </div>
+                        
+                        <div class="arrow-container">
+                            <div class="arrow">→</div>
+                        </div>
+                        
+                        <div class="language-card english">
+                            <span class="language-label">수정</span>
+                            <div class="sentence">
+                                So, summer ends up being my busiest season for phone and device repairs.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-text">So, summer is my peak season for repairing phones and devices.</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">That's why summer is my peak season for repairing phones and devices.</div>
+                        </div>
+                        <div class="step-note">'That's why' 사용으로 인과관계 명확히!</div>
+                        
+                        <div class="process-step">
+                            <div class="step-text">That's why summer is my peak season for repairing phones and devices.</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">That's why summer is my busiest season for repairing them.</div>
+                        </div>
+                        <div class="step-note">'them' 사용으로 반복 피하기!</div>
+                        
+                        <div class="process-step">
+                            <div class="step-text">So, summer is my peak season</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">So, summer ends up being my busiest season</div>
+                        </div>
+                        <div class="step-note">'ends up being' 표현으로 자연스러운 결과 표현!</div>
+                    </div>
+
+                    <div class="explanation-section">
+                        <h2 class="section-title">결과 표현 마스터하기</h2>
+                        <div class="explanation-content">
+                            <h3 class="explanation-title">1. That's why 활용법</h3>
+                            <p>
+                                앞서 설명한 원인에 대한 결과를 표현할 때 사용합니다:
+                            </p>
+                            <div class="phrase-list">
+                                <div class="phrase-item">
+                                    <span class="key-phrase">That's why → 그래서</span>
+                                </div>
+                                <div class="phrase-item">
+                                    <span class="key-phrase">So → 그래서</span>
+                                </div>
+                                <div class="phrase-item">
+                                    <span class="key-phrase">Therefore → 따라서</span>
+                                </div>
+                            </div>
+
+                            <h3 class="explanation-title">2. Ends up being 표현법</h3>
+                            <p>
+                                자연스러운 결과나 상황을 표현할 때 사용합니다:
+                            </p>
+                            <div class="phrase-list">
+                                <div class="phrase-item">
+                                    <span class="key-phrase">ends up being → 결국 ~이 되다</span>
+                                </div>
+                                <div class="phrase-item">
+                                    <span class="key-phrase">ends up + -ing → 결국 ~하게 되다</span>
+                                </div>
+                            </div>
+
+                            <div class="example">
+                                <div class="example-label">결과 표현 예문:</div>
+                                <div class="example-item">
+                                    <span class="key-phrase">That's why</span> summer is my busiest season for repairing them.
+                                    <br><span class="alternative">(그래서 여름이 핸드폰 수리로 가장 바쁜 시즌이다.)</span>
+                                </div>
+                                <div class="example-item">
+                                    Summer <span class="key-phrase">ends up being</span> my busiest season for phone and device repairs.
+                                    <br><span class="alternative">(여름은 결국 핸드폰과 기기 수리로 가장 바쁜 시즌이 된다.)</span>
+                                </div>
+                                <div class="example-item">
+                                    I studied hard, so I <span class="key-phrase">ended up</span> getting good grades.
+                                    <br><span class="alternative">(열심히 공부해서 결국 좋은 성적을 받게 되었다.)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <a href="/index.html" class="home-button">홈으로가기</a>
+        </footer>
+    </div>
+
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+
+        // Check for saved theme preference or default to 'light'
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        body.setAttribute('data-theme', currentTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+    </script>
+</body>
+</html>
