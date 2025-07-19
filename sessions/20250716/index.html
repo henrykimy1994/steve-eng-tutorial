@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>20250716 - 5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="light">
+    <!-- Dark/Light Mode Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+        <span class="sun-icon">☀️</span>
+        <span class="moon-icon">🌙</span>
+    </button>
+
+    <div class="container">
+        <header>
+            <h1>20250716 - 5</h1>
+            <div class="fancy-underline"></div>
+        </header>
+
+        <main>
+            <div class="tabs card">
+                <input type="radio" id="tab1" name="tabs" class="tab-input" checked>
+                <input type="radio" id="tab2" name="tabs" class="tab-input">
+                <input type="radio" id="tab3" name="tabs" class="tab-input">
+                <input type="radio" id="tab4" name="tabs" class="tab-input">
+                <input type="radio" id="tab5" name="tabs" class="tab-input">
+                <input type="radio" id="tab6" name="tabs" class="tab-input">
+                <input type="radio" id="tab7" name="tabs" class="tab-input">
+                <input type="radio" id="tab8" name="tabs" class="tab-input">
+                
+                <div class="tab-labels">
+                    <label for="tab1" class="tab-label">기념일 언급</label>
+                    <label for="tab2" class="tab-label">사진 스튜디오</label>
+                    <label for="tab3" class="tab-label">사진 찍기 어려움</label>
+                    <label for="tab4" class="tab-label">상대방 특성</label>
+                    <label for="tab5" class="tab-label">사진 편집</label>
+                    <label for="tab6" class="tab-label">레스토랑 & 선물</label>
+                    <label for="tab7" class="tab-label">미안한 마음</label>
+                    <label for="tab8" class="tab-label">생일 선물 계획</label>
+                </div>
+                
+                <!-- Tab 1: 기념일 언급 -->
+                <div class="tab-content tab-content-1" id="content1">
+                    <div class="language-comparison">
+                        <div class="language-card korean">
+                            <span class="language-label">원문</span>
+                            <div class="sentence">
+                                Yesterday I told you last Sunday our first anniversary of marriage.
+                            </div>
+                        </div>
+                            
+                        <div class="arrow-container">
+                            <div class="arrow">→</div>
+                        </div>
+                            
+                        <div class="language-card english">
+                            <span class="language-label">수정</span>
+                            <div class="sentence">
+                                Yesterday I told you that last Sunday was our first wedding anniversary.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-text">Yesterday I told you last Sunday our first anniversary of marriage.</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">Yesterday I told you that last Sunday our first anniversary of marriage.</div>
+                        </div>
+                        <div class="step-note">'that' 추가로 명확한 문장 구조 만들기</div>
+                        
+                        <div class="process-step">
+                            <div class="step-text">Yesterday I told you that last Sunday our first anniversary of marriage.</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">Yesterday I told you that last Sunday was our first anniversary of marriage.</div>
+                        </div>
+                        <div class="step-note">'was' 동사 추가</div>
+                        
+                        <div class="process-step">
+                            <div class="step-text">Yesterday I told you that last Sunday was our first anniversary of marriage.</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">Yesterday I told you that last Sunday was our first wedding anniversary.</div>
+                        </div>
+                        <div class="step-note">'wedding anniversary'가 더 자연스러운 표현</div>
+                    </div>
+
+                    <div class="explanation-section">
+                        <h2 class="section-title">핵심 포인트</h2>
+                        <div class="explanation-content">
+                            <h3 class="explanation-title">1. 접속사 "<span class="highlight">that</span>" 사용</h3>
+                            <p>
+                                간접화법에서 'that'을 사용하여 명확한 문장을 만드세요:
+                            </p>
+                            <div class="phrase-list">
+                                <div class="phrase-item">
+                                    <span class="key-phrase">I told you that → 나는 너에게 ~라고 말했다</span>
+                                </div>
+                            </div>
+
+                            <h3 class="explanation-title">2. "<span class="highlight">wedding anniversary</span>" 표현</h3>
+                            <p>
+                                결혼기념일을 표현할 때 더 자연스러운 용어:
+                            </p>
+                            <div class="phrase-list">
+                                <div class="phrase-item">
+                                    <span class="key-phrase">anniversary of marriage → wedding anniversary</span>
+                                </div>
+                            </div>
+
+                            <div class="example">
+                                <div class="example-label">"I told you that" 활용 예문:</div>
+                                <div class="example-item">
+                                    I told you <span class="key-phrase">that</span> I would be late today.
+                                    <br><span class="alternative">(오늘 늦을 거라고 말했잖아.)</span>
+                                </div>
+                                <div class="example-item">
+                                    I told you <span class="key-phrase">that</span> the meeting was canceled.
+                                    <br><span class="alternative">(회의가 취소되었다고 말했잖아.)</span>
+                                </div>
+                                <div class="example-item">
+                                    I told you <span class="key-phrase">that</span> she was coming to visit.
+                                    <br><span class="alternative">(그녀가 방문할 거라고 말했잖아.)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 2: 사진 스튜디오 -->
+                <div class="tab-content tab-content-2" id="content2">
+                    <div class="language-comparison">
+                        <div class="language-card korean">
+                            <span class="language-label">원문</span>
+                            <div class="sentence">
+                                So we booked self photo studio. But actually I don't like take a picture.
+                            </div>
+                        </div>
+                            
+                        <div class="arrow-container">
+                            <div class="arrow">→</div>
+                        </div>
+                            
+                        <div class="language-card english">
+                            <span class="language-label">수정</span>
+                            <div class="sentence">
+                                So, we booked a self-photo studio, but to be honest, I don't really like taking pictures.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-text">So we booked self photo studio.</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">So, we booked a self-photo studio,</div>
+                        </div>
+                        <div class="step-note">관사 'a' 추가와 하이픈 연결</div>
+                        
+                        <div class="process-step">
+                            <div class="step-text">But actually I don't like take a picture.</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">but to be honest, I don't like taking pictures.</div>
+                        </div>
+                        <div class="step-note">'to be honest' 사용과 동명사 형태</div>
+                        
+                        <div class="process-step">
+                            <div class="step-text">but to be honest, I don't like taking pictures.</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">but to be honest, I don't really like taking pictures.</div>
+                        </div>
+                        <div class="step-note">'really' 추가로 강조</div>
+                    </div>
+
+                    <div class="explanation-section">
+                        <h2 class="section-title">핵심 포인트</h2>
+                        <div class="explanation-content">
+                            <h3 class="explanation-title">1. "<span class="highlight">to be honest</span>" 표현</h3>
+                            <p>
+                                솔직한 의견을 표현할 때 사용하는 자연스러운 표현:
+                            </p>
+                            <div class="phrase-list">
+                                <div class="phrase-item">
+                                    <span class="key-phrase">to be honest → 솔직히 말하면</span>
+                                </div>
+                                <div class="phrase-item">
+                                    <span class="key-phrase">honestly → 솔직히</span>
+                                </div>
+                            </div>
+
+                            <h3 class="explanation-title">2. "<span class="highlight">I really don't like</span>" 강조 표현</h3>
+                            <p>
+                                부정적인 감정을 강조할 때 'really' 사용:
+                            </p>
+                            <div class="phrase-list">
+                                <div class="phrase-item">
+                                    <span class="key-phrase">I don't like → I really don't like</span>
+                                </div>
+                            </div>
+
+                            <div class="example">
+                                <div class="example-label">"To be honest" 활용 예문:</div>
+                                <div class="example-item">
+                                    <span class="key-phrase">To be honest</span>, I'm not ready for this presentation.
+                                    <br><span class="alternative">(솔직히 말하면, 이 발표 준비가 안 되었어.)</span>
+                                </div>
+                                <div class="example-item">
+                                    <span class="key-phrase">To be honest</span>, I don't understand this topic.
+                                    <br><span class="alternative">(솔직히, 이 주제를 이해하지 못하겠어.)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 3: 사진 찍기 어려움 -->
+                <div class="tab-content tab-content-3" id="content3">
+                    <div class="language-comparison">
+                        <div class="language-card korean">
+                            <span class="language-label">원문</span>
+                            <div class="sentence">
+                                It is hard to take a picture because I'm not a model so I don't know what pose to do.
+                            </div>
+                        </div>
+                            
+                        <div class="arrow-container">
+                            <div class="arrow">→</div>
+                        </div>
+                            
+                        <div class="language-card english">
+                            <span class="language-label">수정</span>
+                            <div class="sentence">
+                                It's hard to take pictures because I'm not a model, so I don't know how to pose.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-text">It is hard to take a picture</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">It's hard to take pictures</div>
+                        </div>
+                        <div class="step-note">복수형 'pictures' 사용</div>
+                        
+                        <div class="process-step">
+                            <div class="step-text">I don't know what pose to do</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">I don't know how to pose</div>
+                        </div>
+                        <div class="step-note">'how to pose'가 더 자연스러운 표현</div>
+                    </div>
+
+                    <div class="explanation-section">
+                        <h2 class="section-title">핵심 포인트</h2>
+                        <div class="explanation-content">
+                            <h3 class="explanation-title">1. "<span class="highlight">It is / It's</span>" 문장 시작</h3>
+                            <p>
+                                상황이나 감정을 표현할 때 유용한 문장 시작 방법:
+                            </p>
+                            <div class="phrase-list">
+                                <div class="phrase-item">
+                                    <span class="key-phrase">It's hard to → ~하기 어렵다</span>
+                                </div>
+                                <div class="phrase-item">
+                                    <span class="key-phrase">It's easy to → ~하기 쉽다</span>
+                                </div>
+                                <div class="phrase-item">
+                                    <span class="key-phrase">It's difficult to → ~하기 어렵다</span>
+                                </div>
+                            </div>
+
+                            <h3 class="explanation-title">2. "<span class="highlight">how to pose</span>" 표현</h3>
+                            <p>
+                                방법을 모를 때 사용하는 자연스러운 표현:
+                            </p>
+                            <div class="phrase-list">
+                                <div class="phrase-item">
+                                    <span class="key-phrase">what pose to do → how to pose</span>
+                                </div>
+                            </div>
+
+                            <div class="example">
+                                <div class="example-label">"It's hard to" 활용 예문:</div>
+                                <div class="example-item">
+                                    <span class="key-phrase">It's hard to</span> wake up early in the morning.
+                                    <br><span class="alternative">(아침 일찍 일어나기가 어려워.)</span>
+                                </div>
+                                <div class="example-item">
+                                    <span class="key-phrase">It's hard to</span> concentrate when it's noisy.
+                                    <br><span class="alternative">(시끄러울 때 집중하기가 어려워.)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 4: 상대방 특성 -->
+                <div class="tab-content tab-content-4" id="content4">
+                    <div class="language-comparison">
+                        <div class="language-card korean">
+                            <span class="language-label">원문</span>
+                            <div class="sentence">
+                                On the other hand, she likes take a picture. So, she lead me.
+                            </div>
+                        </div>
+                            
+                        <div class="arrow-container">
+                            <div class="arrow">→</div>
+                        </div>
+                            
+                        <div class="language-card english">
+                            <span class="language-label">수정</span>
+                            <div class="sentence">
+                                On the other hand, she likes taking pictures, so she guided me.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-text">she likes take a picture</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">she likes taking pictures</div>
+                        </div>
+                        <div class="step-note">'like' 다음에는 동명사 사용</div>
+                        
+                        <div class="process-step">
+                            <div class="step-text">she lead me</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">she guided me</div>
+                        </div>
+                        <div class="step-note">'guide'의 과거형과 더 적절한 동사 사용</div>
+                    </div>
+
+                    <div class="explanation-section">
+                        <h2 class="section-title">핵심 포인트</h2>
+                        <div class="explanation-content">
+                            <h3 class="explanation-title">1. "<span class="highlight">like + 동명사</span>" 패턴</h3>
+                            <p>
+                                'like' 다음에는 동명사(-ing)를 사용합니다:
+                            </p>
+                            <div class="phrase-list">
+                                <div class="phrase-item">
+                                    <span class="key-phrase">like taking pictures → 사진 찍는 것을 좋아하다</span>
+                                </div>
+                                <div class="phrase-item">
+                                    <span class="key-phrase">like reading books → 책 읽는 것을 좋아하다</span>
+                                </div>
+                            </div>
+
+                            <h3 class="explanation-title">2. "<span class="highlight">guide</span>" 동사 사용</h3>
+                            <p>
+                                안내하거나 도움을 주는 상황에 적절한 동사:
+                            </p>
+                            <div class="phrase-list">
+                                <div class="phrase-item">
+                                    <span class="key-phrase">guide → 안내하다, 이끌다</span>
+                                </div>
+                                <div class="phrase-item">
+                                    <span class="key-phrase">help → 도와주다</span>
+                                </div>
+                            </div>
+
+                            <div class="example">
+                                <div class="example-label">대조 표현 예문:</div>
+                                <div class="example-item">
+                                    <span class="key-phrase">On the other hand</span>, she loves cooking.
+                                    <br><span class="alternative">(반면에, 그녀는 요리하는 것을 좋아한다.)</span>
+                                </div>
+                                <div class="example-item">
+                                    I don't like sports, but <span class="key-phrase">on the other hand</span>, she's very athletic.
+                                    <br><span class="alternative">(나는 운동을 좋아하지 않지만, 반면에 그녀는 매우 운동을 잘한다.)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 5: 사진 편집 -->
+                <div class="tab-content tab-content-5" id="content5">
+                    <div class="language-comparison">
+                        <div class="language-card korean">
+                            <span class="language-label">원문</span>
+                            <div class="sentence">
+                                After took pictures we had to photoshop.
+                            </div>
+                        </div>
+                            
+                        <div class="arrow-container">
+                            <div class="arrow">→</div>
+                        </div>
+                            
+                        <div class="language-card english">
+                            <span class="language-label">수정</span>
+                            <div class="sentence">
+                                After we took the photos, we had to edit them using Photoshop.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-text">After took pictures</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">After we took the photos</div>
+                        </div>
+                        <div class="step-note">주어와 동사를 명확히 표현</div>
+                        
+                        <div class="process-step">
+                            <div class="step-text">we had to photoshop</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">we had to edit them using Photoshop</div>
+                        </div>
+                        <div class="step-note">'edit using Photoshop'이 더 명확한 표현</div>
+                    </div>
+
+                    <div class="explanation-section">
+                        <h2 class="section-title">핵심 포인트</h2>
+                        <div class="explanation-content">
+                            <h3 class="explanation-title">1. "<span class="highlight">After + 완전한 문장</span>" 구조</h3>
+                            <p>
+                                'After' 다음에는 완전한 문장이 와야 합니다:
+                            </p>
+                            <div class="phrase-list">
+                                <div class="phrase-item">
+                                    <span class="key-phrase">After we took → 우리가 찍은 후에</span>
+                                </div>
+                                <div class="phrase-item">
+                                    <span class="key-phrase">After I finished → 내가 끝낸 후에</span>
+                                </div>
+                            </div>
+
+                            <h3 class="explanation-title">2. "<span class="highlight">edit using</span>" 표현</h3>
+                            <p>
+                                도구나 프로그램을 사용한 편집 표현:
+                            </p>
+                            <div class="phrase-list">
+                                <div class="phrase-item">
+                                    <span class="key-phrase">edit using Photoshop → 포토샵으로 편집하다</span>
+                                </div>
+                                <div class="phrase-item">
+                                    <span class="key-phrase">edit with software → 소프트웨어로 편집하다</span>
+                                </div>
+                            </div>
+
+                            <div class="example">
+                                <div class="example-label">"After" 구문 활용 예문:</div>
+                                <div class="example-item">
+                                    <span class="key-phrase">After we finished</span> dinner, we watched a movie.
+                                    <br><span class="alternative">(저녁을 먹은 후에, 우리는 영화를 봤다.)</span>
+                                </div>
+                                <div class="example-item">
+                                    <span class="key-phrase">After I completed</span> my homework, I went to bed.
+                                    <br><span class="alternative">(숙제를 끝낸 후에, 나는 잠자리에 들었다.)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 6: 레스토랑 & 선물 -->
+                <div class="tab-content tab-content-6" id="content6">
+                    <div class="language-comparison">
+                        <div class="language-card korean">
+                            <span class="language-label">원문</span>
+                            <div class="sentence">
+                                And we went to restaurant then suddenly she gave me a present clothes and cake.
+                            </div>
+                        </div>
+                            
+                        <div class="arrow-container">
+                            <div class="arrow">→</div>
+                        </div>
+                            
+                        <div class="language-card english">
+                            <span class="language-label">수정</span>
+                            <div class="sentence">
+                                Then we went to a restaurant, and suddenly she gave me a present - t-shirts and a cake.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-text">And we went to restaurant then</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">Then we went to a restaurant,</div>
+                        </div>
+                        <div class="step-note">'Then'으로 시작하고 관사 'a' 추가</div>
+                        
+                        <div class="process-step">
+                            <div class="step-text">she gave me a present clothes and cake</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">she gave me a present - t-shirts and a cake</div>
+                        </div>
+                        <div class="step-note">구체적인 선물 내용으로 명확히 표현</div>
+                    </div>
+
+                    <div class="explanation-section">
+                        <h2 class="section-title">핵심 포인트</h2>
+                        <div class="explanation-content">
+                            <h3 class="explanation-title">1. "<span class="highlight">Then</span>" 문장 시작</h3>
+                            <p>
+                                시간 순서를 나타낼 때 'Then'으로 문장을 시작:
+                            </p>
+                            <div class="phrase-list">
+                                <div class="phrase-item">
+                                    <span class="key-phrase">Then we went to → 그다음 우리는 ~에 갔다</span>
+                                </div>
+                                <div class="phrase-item">
+                                    <span class="key-phrase">Then I realized → 그때 나는 깨달았다</span>
+                                </div>
+                            </div>
+
+                            <h3 class="explanation-title">2. 구체적인 선물 표현</h3>
+                            <p>
+                                선물의 내용을 구체적으로 명시하는 것이 좋습니다:
+                            </p>
+                            <div class="phrase-list">
+                                <div class="phrase-item">
+                                    <span class="key-phrase">a present - t-shirts and a cake</span>
+                                </div>
+                                <div class="phrase-item">
+                                    <span class="key-phrase">gifts including → ~를 포함한 선물들</span>
+                                </div>
+                            </div>
+
+                            <div class="example">
+                                <div class="example-label">선물 관련 예문:</div>
+                                <div class="example-item">
+                                    She gave me <span class="key-phrase">a surprise gift</span> for my birthday.
+                                    <br><span class="alternative">(그녀는 내 생일에 깜짝 선물을 줬다.)</span>
+                                </div>
+                                <div class="example-item">
+                                    He brought me <span class="key-phrase">flowers and chocolates</span>.
+                                    <br><span class="alternative">(그는 꽃과 초콜릿을 가져다줬다.)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 7: 미안한 마음 -->
+                <div class="tab-content tab-content-7" id="content7">
+                    <div class="language-comparison">
+                        <div class="language-card korean">
+                            <span class="language-label">원문</span>
+                            <div class="sentence">
+                                But, I was sorry that I couldn't prepare some present.
+                            </div>
+                        </div>
+                            
+                        <div class="arrow-container">
+                            <div class="arrow">→</div>
+                        </div>
+                            
+                        <div class="language-card english">
+                            <span class="language-label">수정</span>
+                            <div class="sentence">
+                                I felt sorry because I hadn't prepared anything for her.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-text">I was sorry that</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">I felt sorry because</div>
+                        </div>
+                        <div class="step-note">'I felt sorry because'가 더 자연스러운 표현</div>
+                        
+                        <div class="process-step">
+                            <div class="step-text">I couldn't prepare</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">I hadn't prepared</div>
+                        </div>
+                        <div class="step-note">과거완료형으로 시제 일치</div>
+                        
+                        <div class="process-step">
+                            <div class="step-text">some present</div>
+                            <span class="step-arrow">→</span>
+                            <div class="step-text">anything for her</div>
+                        </div>
+                        <div class="step-note">'anything for her'로 더 자연스럽게</div>
+                    </div>
+
+                    <div class="explanation-section">
+                        <h2 class="section-title">핵심 포인트</h2>
+                        <div class="explanation-content">
+                            <h3 class="explanation-title">1. "<span class="highlight">I felt sorry</span>" 표현</h3>
+                            <p>
+                                미안한 감정을 표현하는 자연스러운 방법:
+                            </p>
+                            <div class="phrase-list">
+                               <div class="phrase-item">
+                                   <span class="key-phrase">I felt sorry → 미안했다</span>
+                               </div>
+                               <div class="phrase-item">
+                                   <span class="key-phrase">I felt bad → 기분이 나빴다</span>
+                               </div>
+                               <div class="phrase-item">
+                                   <span class="key-phrase">I felt guilty → 죄책감을 느꼈다</span>
+                               </div>
+                           </div>
+
+                           <h3 class="explanation-title">2. 과거완료 시제 사용</h3>
+                           <p>
+                               과거의 어떤 시점보다 더 이전에 일어난 일을 표현:
+                           </p>
+                           <div class="phrase-list">
+                               <div class="phrase-item">
+                                   <span class="key-phrase">I hadn't prepared → 나는 준비하지 않았었다</span>
+                               </div>
+                               <div class="phrase-item">
+                                   <span class="key-phrase">I hadn't thought → 나는 생각하지 않았었다</span>
+                               </div>
+                           </div>
+
+                           <div class="example">
+                               <div class="example-label">감정 표현 예문:</div>
+                               <div class="example-item">
+                                   <span class="key-phrase">I felt sorry</span> because I forgot her birthday.
+                                   <br><span class="alternative">(그녀의 생일을 잊어서 미안했다.)</span>
+                               </div>
+                               <div class="example-item">
+                                   <span class="key-phrase">I felt bad</span> about being late to the meeting.
+                                   <br><span class="alternative">(회의에 늦어서 기분이 나빴다.)</span>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+
+               <!-- Tab 8: 생일 선물 계획 -->
+               <div class="tab-content tab-content-8" id="content8">
+                   <div class="language-comparison">
+                       <div class="language-card korean">
+                           <span class="language-label">원문</span>
+                           <div class="sentence">
+                               So, her birthday is coming soon so I think I should give her a gift.
+                           </div>
+                       </div>
+                           
+                       <div class="arrow-container">
+                           <div class="arrow">→</div>
+                       </div>
+                           
+                       <div class="language-card english">
+                           <span class="language-label">수정</span>
+                           <div class="sentence">
+                               Since her birthday is coming up soon, I think I should get her a gift.
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="process-steps">
+                       <div class="process-step">
+                           <div class="step-text">So, her birthday is coming soon so</div>
+                           <span class="step-arrow">→</span>
+                           <div class="step-text">Since her birthday is coming up soon,</div>
+                       </div>
+                       <div class="step-note">'Since'로 문장 시작하고 'coming up' 사용</div>
+                       
+                       <div class="process-step">
+                           <div class="step-text">I should give her a gift</div>
+                           <span class="step-arrow">→</span>
+                           <div class="step-text">I should get her a gift</div>
+                       </div>
+                       <div class="step-note">'get'이 더 자연스러운 표현</div>
+                   </div>
+
+                   <div class="explanation-section">
+                       <h2 class="section-title">핵심 포인트</h2>
+                       <div class="explanation-content">
+                           <h3 class="explanation-title">1. "<span class="highlight">Since</span>" 문장 시작</h3>
+                           <p>
+                               이유를 나타낼 때 'Since'로 문장을 시작:
+                           </p>
+                           <div class="phrase-list">
+                               <div class="phrase-item">
+                                   <span class="key-phrase">Since → ~이므로, ~때문에</span>
+                               </div>
+                               <div class="phrase-item">
+                                   <span class="key-phrase">coming up → 다가오고 있는</span>
+                               </div>
+                           </div>
+
+                           <h3 class="explanation-title">2. 선물 표현 방법들</h3>
+                           <p>
+                               선물을 주는 것을 표현하는 다양한 방법:
+                           </p>
+                           <div class="phrase-list">
+                               <div class="phrase-item">
+                                   <span class="key-phrase">get her a gift → 그녀에게 선물을 사주다</span>
+                               </div>
+                               <div class="phrase-item">
+                                   <span class="key-phrase">prepare a gift for her → 그녀를 위해 선물을 준비하다</span>
+                               </div>
+                               <div class="phrase-item">
+                                   <span class="key-phrase">buy her something → 그녀에게 뭔가를 사주다</span>
+                               </div>
+                           </div>
+
+                           <div class="example">
+                               <div class="example-label">선물 관련 표현 예문:</div>
+                               <div class="example-item">
+                                   I want to <span class="key-phrase">get her a</span> nice necklace.
+                                   <br><span class="alternative">(그녀에게 예쁜 목걸이를 사주고 싶다.)</span>
+                               </div>
+                               <div class="example-item">
+                                   I need to <span class="key-phrase">prepare a gift for</span> my mother.
+                                   <br><span class="alternative">(어머니를 위해 선물을 준비해야 한다.)</span>
+                               </div>
+                               <div class="example-item">
+                                   <span class="key-phrase">Since</span> it's her special day, I should do something nice.
+                                   <br><span class="alternative">(그녀의 특별한 날이므로, 뭔가 좋은 일을 해드려야 한다.)</span>
+                               </div>
+                           </div>
+
+                           <h3 class="explanation-title">3. 추가 표현법 정리</h3>
+                           <div class="phrase-list">
+                               <div class="phrase-item">
+                                   <span class="korean-phrase">Get her a ___</span> <span class="arrow-small">→</span> <span class="key-phrase">그녀에게 ___을 사주다</span>
+                               </div>
+                               <div class="phrase-item">
+                                   <span class="korean-phrase">Prepare ___ for ___</span> <span class="arrow-small">→</span> <span class="key-phrase">___을 위해 ___을 준비하다</span>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </main>
+       
+       <footer>
+           <a href="/index.html" class="home-button">홈으로가기</a>
+       </footer>
+   </div>
+   <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+
+        // Check for saved theme preference or default to 'light'
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        body.setAttribute('data-theme', currentTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+    </script>
+</body>
+</html>
